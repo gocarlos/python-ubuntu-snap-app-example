@@ -1,5 +1,8 @@
-from myapp_source import my_great_app_source
+from myapp_source import my_great_app
+import unittest
 
-print ('inside the test')
 
-my_great_app_source.tata()
+class MyTest(unittest.TestCase):
+    def test(self):
+        print ('\n\n\n\n\n\nInside the test\n\n\n\n')
+        self.assertEqual(my_great_app.fun(3), 4)

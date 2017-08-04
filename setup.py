@@ -8,7 +8,11 @@ requirements = [
 ]
 
 test_requirements = [
+'pytest'
+]
 
+setup_requires=[
+'pytest-runner'
 ]
 
 setup(
@@ -19,10 +23,10 @@ setup(
     author='Carlos Gomes',
     author_email='kmartinho8@gmail.com',
     url='https://github.com/gocarlos/python-ubuntu-snap-app-example',
-    packages=find_packages(exclude=('tests', 'docs')),
+    packages=find_packages(exclude=('tests')),
     install_requires=requirements,
     include_package_data=True,
-    licence='TODO',
+    licence='BSD - 3',
     zip_safe=False,
     keywords='example, app, snap, linux, ubuntu',
     classifiers=[
@@ -34,8 +38,10 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
     ],
     test_suite='tests',
     tests_require=test_requirements,
+    setup_requires=setup_requires,
     scripts=['bin/my_great_app']
 )

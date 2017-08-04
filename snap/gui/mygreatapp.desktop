@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Terminal=false
-Exec=vigilatore
-Name=vigilatore App
+Terminal=true
+Exec=mygreatapp
+Name=mygreatapp App
 Icon=${SNAP}/meta/gui/icon.png
 Categories=Utility;

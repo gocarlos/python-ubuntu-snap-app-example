@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 
-from myapp_source import my_great_app_source
+from myapp_source import my_great_app
 
 """
-    vigilatore application.
+    my application.
 """
 
 def main():
-    """Run the application"""
+    """run the application"""
 
-    print ('im inside main')
-    my_great_app_source.tata()
+    print('I\'m inside main')
+    my_great_app.tata()
+
 
 if __name__ == '__main__':
     main()

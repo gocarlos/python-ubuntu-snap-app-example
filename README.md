@@ -2,9 +2,6 @@
 
 Example of a very simple python app packaged as snap app
 
-Start a great app with this example :)
-
-
 ## snap build instructions
 
 ``` bash
@@ -15,6 +12,7 @@ cd python-ubuntu-snap-app-example
 snapcraft
 # install app
 sudo snap install mygreatapp_1.0_amd64.snap --devmode
-# run the app
+# run the app, or search for mygreatapp, it should show a python icon. 
 mygreatapp
 ```
+If you like it clone/share/start it and do a great app :)
