@@ -6,6 +6,8 @@ Example of a very simple python app packaged as snap app
 
 [![Snap Status](https://build.snapcraft.io/badge/gocarlos/python-ubuntu-snap-app-example.svg)](https://build.snapcraft.io/user/gocarlos/python-ubuntu-snap-app-example)
 
+[![codecov](https://codecov.io/gh/gocarlos/python-ubuntu-snap-app-example/branch/master/graph/badge.svg)](https://codecov.io/gh/gocarlos/python-ubuntu-snap-app-example)
+
 ## snap build instructions
 
 ``` bash
