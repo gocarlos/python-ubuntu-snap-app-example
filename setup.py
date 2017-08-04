@@ -1,6 +1,6 @@
 import os
 
-from setuptools import setup, find_packages
+from setuptools import setup
 
 with open('README.md') as readme_file:
     readme = readme_file.read()
@@ -18,7 +18,7 @@ setup(
     author='Carlos Gomes',
     author_email='kmartinho8@gmail.com',
     url='https://github.com/gocarlos/python-ubuntu-snap-app-example',
-    packages=find_packages(exclude=('tests')),
+    packages=['myapp_source'],
     install_requires=read('requirements.txt'),
     include_package_data=True,
     zip_safe=True,

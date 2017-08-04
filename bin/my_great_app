@@ -11,6 +11,8 @@ def main():
 
     print('I\'m inside main')
     my_great_app.tata()
+    input("Press enter to exit ;)")
+    input()
 
 
 if __name__ == '__main__':

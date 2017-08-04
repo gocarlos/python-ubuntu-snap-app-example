@@ -4,6 +4,7 @@ summary:        Example python snap app
 description:    Example python snap app
 confinement:    devmode
 grade:          stable
+
 apps:
   mygreatapp:
     command:    my_great_app

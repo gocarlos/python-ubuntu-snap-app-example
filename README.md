@@ -19,4 +19,11 @@ sudo snap install mygreatapp_1.0_amd64.snap --devmode
 # run the app, or search for mygreatapp, it should show a python icon.
 mygreatapp
 ```
-If you like it clone/share/start it and do a great app :)
+If you like it clone/share/star it and do a great app :)
+
+
+
+PS: you can also install it by tipping:
+```bash
+sudo snap install mygreatapp --edge --devmode
+```
