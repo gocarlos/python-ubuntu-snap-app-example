@@ -23,7 +23,7 @@ setup(
     include_package_data=True,
     zip_safe=True,
     licence='BSD - 3',
-    keywords='example, app, snap, linux, ubuntu',
+    keywords='example app snap linux ubuntu',
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
