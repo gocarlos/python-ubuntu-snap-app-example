@@ -1,20 +1,15 @@
+import os
+
 from setuptools import setup, find_packages
 
 with open('README.md') as readme_file:
     readme = readme_file.read()
 
-requirements = [
+this = os.path.dirname(os.path.realpath(__file__))
 
-]
-
-test_requirements = [
-'pytest'
-]
-
-setup_requires=[
-'pytest-runner'
-]
-
+def read(name):
+    with open(os.path.join(this, name)) as f:
+        return f.read()
 setup(
     name='my_great_app',
     version='0.0.1',
@@ -24,24 +19,16 @@ setup(
     author_email='kmartinho8@gmail.com',
     url='https://github.com/gocarlos/python-ubuntu-snap-app-example',
     packages=find_packages(exclude=('tests')),
-    install_requires=requirements,
+    install_requires=read('requirements.txt'),
     include_package_data=True,
+    zip_safe=True,
     licence='BSD - 3',
-    zip_safe=False,
     keywords='example, app, snap, linux, ubuntu',
     classifiers=[
-        'Development Status :: 2 - Pre-Alpha',
+        'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: MIT License',
-        'Natural Language :: English',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
-        'Programming Language :: Python :: 3.6',
+        'Natural Language :: English'
     ],
     test_suite='tests',
-    tests_require=test_requirements,
-    setup_requires=setup_requires,
     scripts=['bin/my_great_app']
 )
